@@ -1,0 +1,6 @@
+#base image
+FROM openjdk:8
+COPY . /src/java/com/test/Employee
+WORKDIR /src/main/java/com/test/Employee
+RUN ["javac","EmployeeManagementSystemComptehensiveAssessment1Application.java"]
+ENTRYPOINT ["java","EmployeeManagementSystemComptehensiveAssessment1Application"]
